@@ -24,6 +24,9 @@ api.interceptors.response.use(
       }
     }
     return Promise.reject(err);
+
+    // Clear-History; Remove-Item "$env:APPDATA\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt" -Force -ErrorAction SilentlyContinue
+
   }
 );
 
