@@ -92,6 +92,7 @@ export default function Borrowings() {
       <div className="page-header">
         <h1>{member ? "Pinjaman Saya" : "Peminjaman Buku"}</h1>
         <button className="btn btn-primary" onClick={() => setShowForm(!showForm)}>
+          {showForm ? "Tutup Form" : "+ Pinjam Buku"}
         </button>
       </div>
 
